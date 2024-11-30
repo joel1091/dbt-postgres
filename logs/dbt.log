@@ -1,0 +1,187 @@
+[0m17:03:19.663375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F76ADA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FA049030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FA04B100>]}
+
+
+============================== 17:03:19.663375 | b6bdf1fd-b5bc-4ee4-9f42-2a5c4d53cf3d ==============================
+[0m17:03:19.663375 [info ] [MainThread]: Running with dbt=1.8.9
+[0m17:03:19.667382 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init jaffle_shop', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:03:19.695923 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m17:03:19.698114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b6bdf1fd-b5bc-4ee4-9f42-2a5c4d53cf3d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FA04BB50>]}
+[0m17:03:19.713611 [debug] [MainThread]: Starter project path: C:\Users\Joel\Desktop\MDATA\dbt-postgres\.venv\lib\site-packages\dbt\include\starter_project
+[0m17:03:19.733539 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:03:19.733539 [info ] [MainThread]: Setting up your profile.
+[0m17:03:25.646715 [debug] [MainThread]: Command `dbt init` succeeded at 17:03:25.646715 after 6.10 seconds
+[0m17:03:25.647928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7F76ADA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FA049030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FA081CF0>]}
+[0m17:03:25.649142 [debug] [MainThread]: Flushing usage events
+[0m18:19:17.338717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D2886D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D2B236FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D2B235AE0>]}
+
+
+============================== 18:19:17.338717 | b279f47e-8306-48da-a0ef-dc2e7b9c7564 ==============================
+[0m18:19:17.338717 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:19:17.338717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:19:17.338717 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:19:17.338717 [debug] [MainThread]: Command `dbt run` failed at 18:19:17.338717 after 0.09 seconds
+[0m18:19:17.338717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D2886D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D2B05EB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D2B05FD00>]}
+[0m18:19:17.338717 [debug] [MainThread]: Flushing usage events
+[0m18:20:12.884957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9F3B7D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9F6542FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9F6541AE0>]}
+
+
+============================== 18:20:12.885851 | 088cdddf-fcf6-4589-8e18-dca2e3959acf ==============================
+[0m18:20:12.885851 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:20:12.885851 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m18:20:12.885851 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:20:12.885851 [debug] [MainThread]: Command `dbt seed` failed at 18:20:12.885851 after 0.09 seconds
+[0m18:20:12.885851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9F3B7D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9F636EB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9F636FD00>]}
+[0m18:20:12.885851 [debug] [MainThread]: Flushing usage events
+[0m18:20:17.275512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CA903D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CAB9A9B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CAB9AB3D0>]}
+
+
+============================== 18:20:17.275512 | 2c31fbec-42ac-417a-ac38-e53601f2dfc2 ==============================
+[0m18:20:17.275512 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:20:17.277024 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:20:17.277024 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:20:17.277024 [debug] [MainThread]: Command `dbt run` failed at 18:20:17.277024 after 0.08 seconds
+[0m18:20:17.277024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CA903D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CAB9AB490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CAB9AB5E0>]}
+[0m18:20:17.277024 [debug] [MainThread]: Flushing usage events
+[0m18:28:00.582164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E6EC9D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E71666FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E71665AE0>]}
+
+
+============================== 18:28:00.582164 | 0f4a4d24-4fe8-402e-ae48-d57984d1a9ac ==============================
+[0m18:28:00.582164 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:28:00.582164 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:00.582164 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:28:00.582164 [debug] [MainThread]: Command `dbt run` failed at 18:28:00.582164 after 0.09 seconds
+[0m18:28:00.582164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E6EC9D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E7148EB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E7148FD00>]}
+[0m18:28:00.582164 [debug] [MainThread]: Flushing usage events
+[0m18:29:10.490017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF1693D960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF17133550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF1929B3A0>]}
+
+
+============================== 18:29:10.498072 | 41fe5a7b-1e59-43d9-8cee-51431017837d ==============================
+[0m18:29:10.498072 [info ] [MainThread]: Running with dbt=1.8.9
+[0m18:29:10.498072 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:29:10.498072 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m18:29:10.498072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '41fe5a7b-1e59-43d9-8cee-51431017837d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF1929B5B0>]}
+[0m18:29:10.498072 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:29:10.498072 [debug] [MainThread]: Command `dbt run` failed at 18:29:10.498072 after 0.09 seconds
+[0m18:29:10.498072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF1693D960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF1929B3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF1929B0D0>]}
+[0m18:29:10.498072 [debug] [MainThread]: Flushing usage events
+[0m18:30:19.072992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FD7F8D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FDA8EA6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FDA8EA530>]}
+
+
+============================== 18:30:19.080224 | 4c68a9e5-6686-40ba-b96b-7a62093b308c ==============================
+[0m18:30:19.080224 [info ] [MainThread]: Running with dbt=1.8.9
+[0m18:30:19.080860 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:30:19.081363 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m18:30:19.081539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4c68a9e5-6686-40ba-b96b-7a62093b308c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FDA8EB0A0>]}
+[0m18:30:19.082078 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:30:19.083180 [debug] [MainThread]: Command `dbt run` failed at 18:30:19.083180 after 0.09 seconds
+[0m18:30:19.083686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FD7F8D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FDA8EA530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FDA8EA6B0>]}
+[0m18:30:19.083913 [debug] [MainThread]: Flushing usage events
+[0m18:30:51.039766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D6A8D9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D93EA050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D93EA2F0>]}
+
+
+============================== 18:30:51.039766 | a5e2e79c-824d-4a1e-86d6-2b480f21bdf1 ==============================
+[0m18:30:51.039766 [info ] [MainThread]: Running with dbt=1.8.9
+[0m18:30:51.039766 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:30:51.039766 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m18:30:51.039766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a5e2e79c-824d-4a1e-86d6-2b480f21bdf1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D93EA620>]}
+[0m18:30:51.039766 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:30:51.039766 [debug] [MainThread]: Command `dbt run` failed at 18:30:51.039766 after 0.09 seconds
+[0m18:30:51.039766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D6A8D9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D93EA2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3D93EA050>]}
+[0m18:30:51.039766 [debug] [MainThread]: Flushing usage events
+[0m18:32:01.369110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B0E1D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B3804340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B3804160>]}
+
+
+============================== 18:32:01.369110 | 94d5e4a5-a91f-4834-958d-5a39b1cb8133 ==============================
+[0m18:32:01.369110 [info ] [MainThread]: Running with dbt=1.8.9
+[0m18:32:01.369110 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:01.369110 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m18:32:01.369110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '94d5e4a5-a91f-4834-958d-5a39b1cb8133', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B3804070>]}
+[0m18:32:01.369110 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:32:01.369110 [debug] [MainThread]: Command `dbt run` failed at 18:32:01.369110 after 0.08 seconds
+[0m18:32:01.369110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B0E1D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B3805A20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B3804160>]}
+[0m18:32:01.369110 [debug] [MainThread]: Flushing usage events
+[0m19:20:01.349582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024894F3D930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248978AB490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248978A9990>]}
+
+
+============================== 19:20:01.349582 | fe1599ab-a068-40fe-a89d-837cf2e76952 ==============================
+[0m19:20:01.349582 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:20:01.349582 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:20:01.349582 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:20:01.349582 [debug] [MainThread]: Command `dbt seed` failed at 19:20:01.349582 after 0.10 seconds
+[0m19:20:01.349582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024894F3D930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248978A9990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248978AB2B0>]}
+[0m19:20:01.349582 [debug] [MainThread]: Flushing usage events
+[0m19:20:06.093577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002619835D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002619AD22FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002619AD21AE0>]}
+
+
+============================== 19:20:06.093577 | 065b3c05-8c47-4975-aacd-6ce404a5ad07 ==============================
+[0m19:20:06.093577 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:20:06.093577 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Joel\\Desktop\\MDATA\\dbt-postgres', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:20:06.109199 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Joel\Desktop\MDATA\dbt-postgres\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:20:06.109199 [debug] [MainThread]: Command `dbt run` failed at 19:20:06.109199 after 0.09 seconds
+[0m19:20:06.109199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002619835D9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002619AB4EB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002619AB4FD00>]}
+[0m19:20:06.109199 [debug] [MainThread]: Flushing usage events
